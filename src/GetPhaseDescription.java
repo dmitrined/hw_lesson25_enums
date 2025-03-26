@@ -1,4 +1,4 @@
-public class MoonTest {
+public class GetPhaseDescription {
     public static void main(String[] args) {
         MoonPhases moon = MoonPhases.NEW_MOON;
         String localMoon = MinimumTask.getPhaseDescription(String.valueOf(moon));
@@ -20,7 +20,7 @@ public class MoonTest {
     public static void assertEquals(String actualResult, String expectedResult) {
         if (!actualResult.equals(expectedResult)) {
             System.err.println(
-                    "MoonTest.getPhaseDescription error, expected: " + expectedResult
+                    "GetPhaseDescription.getPhaseDescription error, expected: " + expectedResult
             );
         }
     }
