@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Minimum {
+public class MinimumTask {
     public static void main(String[] args) {
         // Вывод всех значений MoonPhases
         for (MoonPhases moonPhases : MoonPhases.values()) {
@@ -37,7 +37,7 @@ public class Minimum {
                     case WAXING_CRESCENT:
                         return "\uD83C\uDF18 Убывающий серп";
                     default:
-                        return "Сегодня какая-то другая фаза луны.";
+                        return "Некорректный ввод фазы луны.";
                 }
             }
         }
