@@ -1,4 +1,5 @@
-public class GetPhaseDescription {
+public class GetPhaseDescriptionTest
+{
     public static void main(String[] args) {
         MoonPhases moon = MoonPhases.NEW_MOON;
         String localMoon = MinimumTask.getPhaseDescription(String.valueOf(moon));
