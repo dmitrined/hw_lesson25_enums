@@ -1,12 +1,12 @@
 public enum MoonPhases {
     NEW_MOON(" 0%"),
     WAXING_CRESCENT(" 14.3%"),
+    WANING_CRESCENT(" 28.6%"),
     FIRST_QUARTER(" 42.9%"),
-    WAXING_GIBBOUS(" 71.5%"),
-    FULL_MOON(" 100%"),
-    WANING_GIBBOUS(" 85.8%"),
     LAST_QUARTER(" 57.2%"),
-    WANING_CRESCENT(" 28.6%");
+    WAXING_GIBBOUS(" 71.5%"),
+    WANING_GIBBOUS(" 85.8%"),
+    FULL_MOON(" 100%");
 
     private final String description;
 
@@ -33,7 +33,7 @@ public enum MoonPhases {
             return FIRST_QUARTER;
         } else if (percent <= 57.2) {
             return LAST_QUARTER;
-        } else if (percent < 71.5) {
+        } else if (percent <= 71.5) {
             return WAXING_GIBBOUS;
         } else if (percent < 100) {
             return WANING_GIBBOUS;
