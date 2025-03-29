@@ -37,7 +37,7 @@ public class MinimumTask {
                     case WAXING_CRESCENT:
                         return "\uD83C\uDF18 Убывающий серп";
                     default:
-                        return "Некорректный ввод фазы луны.";
+                        return "Некорректный ввод фазы луны";
                 }
             }
         }
